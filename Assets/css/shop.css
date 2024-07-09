@@ -92,10 +92,13 @@ nav{
     width: 87%;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
     /* background-color: red; */
 }
 .row_one{
-    width: 25%;
+    width: 24%;
     height: 100%;
     /* background-color: #41BEF9; */
     display: flex;
@@ -166,3 +169,150 @@ nav{
     list-style-type: none;
     line-height: 40px;
 }
+.row_two{
+    width: 73%;
+    height: 100%;
+    /* background-color: magenta; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.row_two_nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+.row_two_nav select{
+    padding: 10px 20px;
+}
+.grid_collection{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 30px;
+}
+.SELLING_ITEMS{
+    width: 100%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 13px;
+}
+.Item_image_div{
+    width: 100%;
+    height: 270px;
+    /* background-color: yellow; */
+    display: flex;
+    position: relative;
+    /* border-radius: 20%; */
+}
+.item_image-1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+.item_image-2{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+}
+.SELLING_ITEMS:hover .item_image-2{
+    opacity: 0;
+    transition: .3s;
+}
+.SELLING_ITEMS a{
+    color:black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.SELLING_ITEMS a:hover{
+    color: #4CA9F8;
+    transition: .3s;
+}
+.icons{
+    width: 80%;
+    height: 45px;
+    /* background-color:wheat; */
+    bottom:40%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+}
+.icons a{
+    width: 22%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.icons a:hover{
+    color: white;
+    background-color: #02A9F7;
+    transition: 0.2s;
+}
+.SELLING_ITEMS:hover .icons{
+    opacity: 1;
+    transition: 0.3s;
+    transform: translateY(10px);
+}
+.color-picker{
+    /* background-color: black; */
+    width: 125px;
+    height: 20px;
+    display: flex;
+    gap: 5px;
+    /* justify-content: space-between; */
+}
+.color-picker a{
+    text-decoration: none;
+    color: black;
+}
+.color-5{
+    background-color:#EBEBEB;
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+}
+.color-6{
+    background-color:red;
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+}
+.color-7{
+    background-color:green;
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+}
+.color-8{
+    background-color:blue;
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+}
+.color-9{
+    background-color:yellow;
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+}
+
